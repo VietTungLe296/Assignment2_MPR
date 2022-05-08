@@ -27,14 +27,6 @@ public class CheckoutActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        selectedProducts = new ArrayList<>();
-        selectedProducts.add(new Product(1,"dcm","hellio",3));
-        selectedProducts.add(new Product(1,"dcm","hellio",3));
-        rvSelected = findViewById(R.id.rvSelected);
-        rvSelected.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new ProductAdapter(selectedProducts);
-        rvSelected.setAdapter(adapter);
-
     }
 
     @Override
